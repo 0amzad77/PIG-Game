@@ -8,7 +8,6 @@ const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
 let currentScore = 0;
-
 // Starting conditions
 score0El.textContent = 0;
 score1El.textContent = 0;
@@ -24,9 +23,8 @@ btnRoll.addEventListener('click', function () {
   diceEl.src = `src/images/dice-${dice}.png`;
 
   // 3. Check for rolled 1
-  if (dice !=== 1) {
-  // Add dice to current score
-  currentScore += dice;
+  if (dice !== 1) {
+    // Add dice to current score
+    currentScore += dice;
   }
-
 });
